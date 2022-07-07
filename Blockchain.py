@@ -33,3 +33,6 @@ class Blockchain:
 a = Blockchain()
 dict = {}
 a.populate_block(dict)
+
+
+

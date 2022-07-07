@@ -1,6 +1,13 @@
+from datetime import datetime
 import hashlib
 
 class Helpers:
+    def log_time(self) -> str:
+        '''Função que retorna o DateTime atual em:
+        >>> DD:MM:YY HH:MM:SS'''
+        aux = datetime.now()
+        return aux.strftime("%d/%m/%Y %H:%M:%S")
+        
     def hash(self, block: dict) -> str:
         __hash_data = ''
         for i in block:
@@ -13,7 +20,6 @@ class Helpers:
         __last_id = int(id_history[-1], 16)
         __new_id = hex(__last_id + 1)
         return {'new_id': __new_id, 'last_id': hex(__last_id)}
-
 
     def check_integrity(self) -> bool:
         pass
