@@ -1,5 +1,5 @@
 import hashlib   
-   
+
 def hash(block: dict) -> str:
     __hash_data = ''
     for i in block:
