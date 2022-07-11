@@ -1,5 +1,5 @@
 from datetime import datetime
-import json
+
 
 def log_time() -> str:
     '''Função que retorna o DateTime atual em:

@@ -11,17 +11,19 @@ class Blockchain:
         config.read(CONFIG_FILE)
         self.LOCALCHAIN = config['DEFAULT']['LOCALCHAIN']
         self.block = Block()
-        __sync = self.chain_sync()
-        if not __sync:
+        blockchain_sync_data = self.chain_sync()
+        if not blockchain_sync_data:
             self.genesis_block()
         else: 
-            self.blockchain = __sync
-            print(self.blockchain)
-        self.check_integrity()
-        #self.block.new_block(self.blockchain, self.sync_data)
+            self.blockchain = blockchain_sync_data
+        if not self.check_chain_integrity():
+            return
+        else:
+            print('Blockchain integrity verified!')
         
     def chain_sync(self) -> dict:
         self.__id_history = []
+        self.__nonce_history = []
         self.sync_data = {}
         with open('blockchain.json', 'r') as f:
             __blockchain = json.load(f)
@@ -30,12 +32,15 @@ class Blockchain:
             return
         for block in __blockchain:
             __block_id = block['header']['id']
+            __nonce_history = block['header']['nonce']
             print(f'Syncing block: {__block_id}')
             self.__id_history.append(__block_id)
+            self.__nonce_history.append(__nonce_history)
         self.__last_id = self.__id_history[-1]
         print(f'Last block mined: {self.__last_id}')
         self.sync_data['id_history'] = self.__id_history
         self.sync_data['last_id'] = self.__last_id
+        self.sync_data['nonce_history'] = self.__nonce_history
         return __blockchain
 
     def genesis_block(self):
@@ -51,25 +56,27 @@ class Blockchain:
         #    json.dump(self.blockchain, blockchainfile, indent=4)
         #    print(self.blockchain)
 
-    def check_integrity(self) -> bool:
+    def check_chain_integrity(self) -> bool:
         __blockchain_height = len(self.blockchain)
-        if __blockchain_height < 2:
-            print('ok')
+        if __blockchain_height < 2: 
             return True
         __index = 1
         n_index = 0
         while __index <= (__blockchain_height - 1):
             n_hash = str(self.blockchain[__index]['header']['n_hash'])
-            if n_hash != str(Cripto.hash(self.blockchain[n_index]['header']['n_hash'])):
+            block_id = self.blockchain[__index]['header']['id']
+            n_block_id = self.blockchain[n_index]['header']['id']
+            if n_hash != str(Cripto.hash(self.blockchain[n_index])):
+                print(f"Block hash {n_block_id} is invalid!")
                 return False #previous block's hash changed!
-            elif n_hash.startswith('000'):
+            __difficult_dict = Cripto.difficult(block_id)
+            __difficult = __difficult_dict['difficult']
+            if not n_hash.startswith(__difficult):
+                print(f"Block's nonce {n_block_id} is invalid!")
                 return False #hash invalid
-
-
-    def difficult(self):
-        pass
-
-    def PoW(hash: str) -> int:
-        pass
+            __index = __index + 1
+            n_index = n_index + 1
+            return True
 
 Blockchain = Blockchain()
+
