@@ -7,10 +7,13 @@ def hash(block: dict) -> str:
     return __hash
 
 def PoW(block, __sync_data):
-    __nonce_history = __sync_data['nonce_history']
+    if __sync_data:
+        __nonce_history = __sync_data['nonce_history']
+    else:
+        __nonce_history = []
     nonce = 0
     PoW = False
-    while pow == False:
+    while PoW == False:
         difficult_helper = difficult(block['header']['id'])
         block_difficult = difficult_helper['difficult']
         block['header']['nonce'] = nonce
@@ -24,8 +27,9 @@ def PoW(block, __sync_data):
             continue
         else:
             print(f'Block mined with nonce: {nonce}')
-            pow = True
-        return str(nonce)
+            print(f'Hash: {try_hash}')
+            PoW = True
+        return nonce
 
 def difficult(block_id):
         '''Difficult increases every 2,016 blocks, 

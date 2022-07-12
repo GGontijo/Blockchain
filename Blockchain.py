@@ -1,3 +1,4 @@
+import time
 from Block import Block
 import Cripto
 import json
@@ -11,7 +12,7 @@ class Blockchain:
         config.read(CONFIG_FILE)
         self.LOCALCHAIN = config['DEFAULT']['LOCALCHAIN']
         self.block = Block()
-        blockchain_sync_data = self.chain_sync()
+        blockchain_sync_data = self.init_chain_sync()
         if not blockchain_sync_data:
             self.genesis_block()
         else: 
@@ -20,9 +21,20 @@ class Blockchain:
             return
         else:
             print('Blockchain integrity verified!')
+        while True:
+            self.mine()
+            self.check_chain_integrity()
+            time.sleep(5)
+
+
+    def mine(self):
+        new_block = self.block.new_block(self.blockchain, self.sync_data)
+        self.blockchain.append(new_block)
+        print(self.blockchain)
         
-    def chain_sync(self) -> dict:
+    def init_chain_sync(self) -> dict:
         self.__id_history = []
+        self.__last_id = None
         self.__nonce_history = []
         self.sync_data = {}
         with open('blockchain.json', 'r') as f:
@@ -52,10 +64,6 @@ class Blockchain:
             json.dump(self.blockchain, blockchainfile, indent=4)
         return
 
-        #with open(self.LOCALCHAIN, 'w') as blockchainfile:
-        #    json.dump(self.blockchain, blockchainfile, indent=4)
-        #    print(self.blockchain)
-
     def check_chain_integrity(self) -> bool:
         __blockchain_height = len(self.blockchain)
         if __blockchain_height < 2: 
@@ -63,10 +71,10 @@ class Blockchain:
         __index = 1
         n_index = 0
         while __index <= (__blockchain_height - 1):
-            n_hash = str(self.blockchain[__index]['header']['n_hash'])
+            n_hash = self.blockchain[__index]['header']['n_hash']
             block_id = self.blockchain[__index]['header']['id']
             n_block_id = self.blockchain[n_index]['header']['id']
-            if n_hash != str(Cripto.hash(self.blockchain[n_index])):
+            if n_hash != Cripto.hash(self.blockchain[n_index]):
                 print(f"Block hash {n_block_id} is invalid!")
                 return False #previous block's hash changed!
             __difficult_dict = Cripto.difficult(block_id)

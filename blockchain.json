@@ -1,13 +1,17 @@
 [
     {
-        "data": {
-            "timestamp": "10/07/2022 22:44:18",
-            "": null
-        },
         "header": {
             "id": "0x1",
+            "timestamp": "11/07/2022 16:08:44",
             "n_hash": "genesis_block",
-            "nonce": null
+            "difficult": {
+                "difficult": "0",
+                "epoch": 0
+            },
+            "nonce": 13
+        },
+        "data": {
+            "": null
         }
     }
 ]
