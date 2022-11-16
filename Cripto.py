@@ -17,8 +17,9 @@ def PoW(block, __sync_data):
         difficult_helper = difficult(block['header']['id'])
         block_difficult = difficult_helper['difficult']
         block['header']['nonce'] = nonce
-        print(f'Mining nonce: {nonce}')
+        #print(f'Mining nonce: {nonce}')
         try_hash = str(hash(block))
+        print(f'Trying hash: {try_hash}')
         if not try_hash.startswith(block_difficult):
             nonce = nonce + 1
             continue
@@ -35,5 +36,5 @@ def difficult(block_id):
         '''Difficult increases every 2,016 blocks, 
         starting from 1 to n I'll be using just 64..'''
         epoch = int((int(block_id,16)) / 64) 
-        difficult = '0' * (epoch + 1)
+        difficult = '000' * (epoch + 1)
         return {'difficult': difficult, 'epoch': epoch}

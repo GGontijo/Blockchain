@@ -1,0 +1,281 @@
+commit dd4035a5073b42a2a11d557a2cab74666b85bdd5
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Wed Jul 13 12:49:32 2022 -0400
+
+    update
+
+commit d8686cdfc8e75f5529a0b23addac342f0a14eeb4
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Wed Jul 13 12:30:26 2022 -0400
+
+    solved queue cleaning problem
+
+commit 0806687458f65a2f8815c756527bce20e54a3eae
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Fri Jul 8 12:54:23 2022 -0400
+
+    bug fixed
+
+commit 3bc72f92412253601fb8faea348634250fc9204c
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Fri Jul 8 12:47:46 2022 -0400
+
+    update
+
+commit f0e86bc3d387dfada1d7f5e03326f0b057511cdf
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Fri Jul 8 08:54:59 2022 -0400
+
+    Solved recursion problems
+
+commit e984588eb2af0a0fef5bf60e9c70b9de69d7a1f8
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Wed Jul 6 17:03:54 2022 -0400
+
+    update
+
+commit 4975279befc479d8bc054750bca5202d79df987e
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Wed Jul 6 16:39:38 2022 -0400
+
+    update
+
+commit a0babbbdf99d9bf181671ac5f05406c64a1b65e3
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Wed Jul 6 16:39:17 2022 -0400
+
+    update
+
+commit b77d0777982c06d25e4750b83790621e9ae14240
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Wed Jul 6 16:37:57 2022 -0400
+
+    update
+
+commit 3908d17d5ea47e627bedc6845df1eaeb3b5aba76
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Wed Jul 6 16:37:28 2022 -0400
+
+    update
+
+commit 5dc671818cf91f75a06955daa7e939f70cfa5f9d
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Wed Jul 6 16:08:56 2022 -0400
+
+    update
+
+commit ec19955af231f3cfc3d7db634e352037edd82a7e
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Wed Jul 6 13:23:33 2022 -0400
+
+    removido delay obsoleto
+
+commit 4bc8ead59dc6a6d40c80ac5ac5913c1c51102b22
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Wed Jul 6 12:40:24 2022 -0400
+
+    minor update
+
+commit e29e1b7410c83f90470b1a0cf5025b076c0ead99
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Wed Jul 6 12:36:25 2022 -0400
+
+    improved queue verification
+
+commit b397a1bc9bdd3e782acb9f2555b99127a303bdf1
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Tue Jun 28 12:10:12 2022 -0400
+
+    fixed change to test
+
+commit a6c38b9282354319773177fba08592f8d9a7a71d
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Tue Jun 28 12:09:38 2022 -0400
+
+    update
+
+commit b45c7048338200cbbb675acb10f4e5a876f66f47
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Tue Jun 28 12:06:23 2022 -0400
+
+    minor update
+
+commit 235e477fec575ed05512be34502fb743bcbf14fa
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Tue Jun 28 12:06:06 2022 -0400
+
+    minor update
+
+commit 04325ecd10c006c746f58097bbdbac0cb294aa66
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Tue Jun 28 12:05:32 2022 -0400
+
+    minor update
+
+commit a993422c142cf1bb0a2f3c013409e857e7cb51f1
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Tue Jun 28 09:04:57 2022 -0400
+
+    minor fix
+
+commit 624ce1c262d4537d03411162bcac95073590e105
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Tue Jun 28 08:58:38 2022 -0400
+
+    minor fix
+
+commit ccd5acc71e363a27683251964eeddd0f547c8a60
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Tue Jun 28 08:56:17 2022 -0400
+
+    Implemented object oriented paradigm
+
+commit 4c032b3aa8814346e38de8d0e22571355c5a56ee
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Mon Jun 27 15:04:14 2022 -0400
+
+    minor update
+
+commit 0993b40974b5edb844fab4ad06de0d416b2dbecd
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Mon Jun 27 14:04:12 2022 -0400
+
+    fixed URL_BASE to fstring
+
+commit c0f7410a79cefb5bf8cfa2eb28240b6254e3c36f
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Mon Jun 27 13:48:16 2022 -0400
+
+    minor update
+
+commit ed596528f79df207995b37c34ad693f35982d03e
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Mon Jun 27 13:16:19 2022 -0400
+
+    config file and configparser included
+
+commit cfae4ccbb1a7b57341fd92f3161ac9ae7e6c7d79
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Fri Jun 24 09:27:57 2022 -0400
+
+    Cleaning garbage
+
+commit 4e620f381f2bf80f200ba6cf69408c28b6a3100b
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Thu Jun 23 17:23:40 2022 -0400
+
+    minor change
+
+commit 10f1a8a6a59ffe43c1eeef8fb4dbc85635a0c8fa
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Thu Jun 23 15:48:42 2022 -0400
+
+    inserting Reynaldo chat_id
+
+commit 732fc8500ec86ac61d0241a84766266633f4b050
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Thu Jun 23 15:43:46 2022 -0400
+
+    timeout alert fixed
+
+commit 1ab4ec688a80a7d0e090bfa16e4b9fc4ba284697
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Wed Jun 22 07:40:13 2022 -0400
+
+    Upgrading file comprehension
+
+commit 82c8481ff623b321a294f927d82a06b9ed583217
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Mon Jun 20 15:55:00 2022 -0400
+
+    fixing cache function with a external cache file
+
+commit 304ae70cf43c00d0abcd15c0b61202dbc1cd4cfb
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Mon Jun 20 14:35:13 2022 -0400
+
+    including a cache function to reduce duplicated notifications; other minor changes
+
+commit 7b225c16d7a26d8769f83b6e8dc34987a7e20472
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Mon Jun 20 08:38:28 2022 -0400
+
+    updating se_cookie validation and other minor changes
+
+commit 2d0e3fa072a771217e7d552141105da82d7eca5f
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Wed Jun 8 17:21:55 2022 -0400
+
+    expliciting variables types
+
+commit 2599a0adfc60f3d3f00462df7a498258c3bf1d57
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Wed Jun 8 10:15:42 2022 -0400
+
+    update
+
+commit 4ea7a98dec74011524306b00d3410f2c8ddff62c
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Fri Jun 3 17:17:04 2022 -0400
+
+    update
+
+commit 5912d5918783d3122d51f29f4f4ca5446a56742b
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Fri Jun 3 16:13:38 2022 -0400
+
+    update
+
+commit 80306d895550d5ff533a0a9978a3c5ee1845746f
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Fri Jun 3 14:20:25 2022 -0400
+
+    update
+
+commit a266123a6cf4f9d155827a82deb8b170966693eb
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Fri Jun 3 14:18:34 2022 -0400
+
+    update
+
+commit b85794a2ea5405f81598804ce155712a0cf27278
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Fri Jun 3 14:01:43 2022 -0400
+
+    update
+
+commit 2ff67faf07ea848a80f6efb84b353f61a5b9b6f6
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Fri Jun 3 09:03:39 2022 -0400
+
+    update
+
+commit 3f91cf2925cf08cca5166fd7963a98361f27bff4
+Author: GGONTIJO <gabrieldercilio08@gmail.com.br>
+Date:   Thu Jun 2 16:58:06 2022 -0400
+
+    update
+
+commit 22296c2c322920a1777947d5c1442b5bc960a657
+Author: GGONTIJO <gabrieldercilio08@gmail.com.br>
+Date:   Thu Jun 2 16:55:57 2022 -0400
+
+    update
+
+commit 85119cd85fd493a96a29a59ae982d373931980f0
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Wed Jun 1 17:22:32 2022 -0400
+
+    Create SeverinoIR.py
+
+commit 3506eb1292a01fc108a938e7494da26e4b57f0b2
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Wed Jun 1 17:22:17 2022 -0400
+
+    Create passo_a_passo.txt
+
+commit 31583ee84219a23cd4c5238fb0edab87a31d3e38
+Author: Dercilio <38219914+GGontijo@users.noreply.github.com>
+Date:   Wed Jun 1 17:21:59 2022 -0400
+
+    Create output.txt

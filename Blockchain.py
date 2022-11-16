@@ -17,19 +17,24 @@ class Blockchain:
             self.genesis_block()
         else: 
             self.blockchain = blockchain_sync_data
-        if not self.check_chain_integrity():
-            return
-        else:
-            print('Blockchain integrity verified!')
+        #if not self.check_chain_integrity():
+        #    return
+        #else:
+        #    print('Blockchain integrity verified!')
         while True:
             self.mine()
-            self.check_chain_integrity()
-            time.sleep(5)
+            if not self.chain_sync():
+                return
+            #if not self.check_chain_integrity():
+            #    return
+            time.sleep(0)
 
 
     def mine(self):
         new_block = self.block.new_block(self.blockchain, self.sync_data)
         self.blockchain.append(new_block)
+        with open(self.LOCALCHAIN, 'w') as blockchainfile:
+            json.dump(self.blockchain, blockchainfile, indent=4)
         print(self.blockchain)
         
     def init_chain_sync(self) -> dict:
@@ -54,6 +59,28 @@ class Blockchain:
         self.sync_data['last_id'] = self.__last_id
         self.sync_data['nonce_history'] = self.__nonce_history
         return __blockchain
+
+    def chain_sync(self):
+        if not self.sync_data:
+            print('Sync data not initialized!')
+            return False
+
+        with open('blockchain.json', 'r') as f:
+            __blockchain = json.load(f)
+
+        for block in __blockchain:
+            __block_id = block['header']['id']
+            __nonce_history = block['header']['nonce']
+            print(f'Syncing block: {__block_id}')
+            self.__id_history.append(__block_id)
+            self.__nonce_history.append(__nonce_history)
+        self.__last_id = self.__id_history[-1]
+        print(f'Last block mined: {self.__last_id}')
+        self.sync_data['id_history'] = self.__id_history
+        self.sync_data['last_id'] = self.__last_id
+        self.sync_data['nonce_history'] = self.__nonce_history
+        return True
+
 
     def genesis_block(self):
         self.blockchain = []
